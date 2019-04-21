@@ -26,17 +26,10 @@
     font-weight: 400;
 }
 
-/* @font-face {
-    font-family: 'Fontawesome';
-    src: url('../assets/fonts/fontawesome-webfont.ttf') format("woff2");
-    font-style: normal;
-    font-weight: 400;
-} */
-
 * {
     margin: 0;
     font-family: 'TitilliumWeb-Regular';
-    color: rgba(149, 147, 147, 255);
+    color: rgba(149, 147, 147, 255); 
     font-size: 16px;
 }
 
@@ -50,14 +43,9 @@
     font-size: inherit;
 }
 
-.white {
+.log-item-white {
     color: white;
 }
-
-/* .container-fixed {
-    max-width: 100%;
-    margin: 0 auto;
-} */
 
 .wrapper {
     padding: 4.2vw 8vh 0vh 12vw; 
@@ -73,7 +61,7 @@ body {
 .right-wrap {
     float: right; 
     right: 0;
-    margin-top: -2%;
+    margin-top: -4%;
 }
 
 .right-margin {
@@ -94,21 +82,16 @@ main p {
 
 a, a:visited, a:hover {
     text-decoration: none;
-     
 }
 
 a:hover {
     color: #fc444a;
 }
 
-a:visited {
-    color: #5b4295;
-}
-
 .main-block {
     margin: 0;
+    text-align: center;  
 } 
-
   
 
 /*header*/
@@ -119,7 +102,7 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
-    /* opacity: 0.8;   */
+    opacity: 0.95;  
     display: block;     
     font-size: 0.5rem;
 }
@@ -141,7 +124,6 @@ nav li {
     font-size: 16px;
     display: inline;
 }
-
 
 .main-menu {
     display: inline-block;
@@ -175,12 +157,9 @@ nav li {
     content: '';
 }
 
-
-
 .menu-item {
     text-decoration: none;
 }
-
 
 .log-menu {
     position: relative;
@@ -245,14 +224,13 @@ h6 {
     text-align: right;
 }
 
-
-
 button {
     font-family: TitilliumWeb-Bold, AdobeInvisFont, MyriadPro-Regular;
     font-size: 12pt;
     color: white;
     text-align: center;   
-    height: 2em;    
+    height: 2.5em;    
+    padding: 0 12px;
 }
 
 div {
@@ -268,7 +246,6 @@ div {
     margin-left: 17vw;
 }
 
-
 .share-icons-container {
     position: absolute;
     right: 10px;
@@ -279,34 +256,29 @@ div {
     display: block;
 }
 
-
 .buttons-container{
     background-image: url(../assets/images/shadow.png);
-    background-size: auto; 
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
     text-align: center;
-}
-
-.google {
-    background-image: url(../assets/images/playstore.png);
-}
-
-.apple {
-    background-image: url(../assets/images/appstore.png);
+    display: inline-block;
+    margin-top: 5%;
 }
 
 .gradient {
     background: linear-gradient(to bottom right, #582c7e, #5a3b8e, #616bc0, #6276cd);
     border-radius: 20px;
     border: none;
+    box-shadow: 0 5px 5px -2px #5e7bea ;
 }
 
 .blue-gradient {
     background: linear-gradient(to bottom right, #3ab4e1, #4e95e6, #5c7eea, #5e7bea);
     border-radius: 20px;
     border: none;
+    box-shadow: 0 5px 5px -2px #4e95e6;
 }
 
 .store {
@@ -362,15 +334,28 @@ div {
     text-align: right;
 }
 
-
 .device{
     text-align: center;
     margin-top: 5%;
+    line-height: 300%;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .upgrade-block {
     text-align: center;
     line-height: 200%;
+}
+
+blockquote {
+    font-family: MalagaOT-RegItalic, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 14pt;
+    color: rgba(16, 16, 16, 255);    
+}
+
+.blockquote {
+    margin: 5% 50% 5% 20%;
 }
 
 /* footer */
@@ -381,7 +366,7 @@ footer{
 
 .footer-grid-container {
     display: grid;
-    grid-template-columns: 0.5fr 3fr 1fr 2fr 2fr 2fr 1fr;
+    grid-template-columns: 1vw 3fr 1fr 2fr 2fr 2fr 2fr;
     grid-template-rows: 1fr;    
     grid-column-gap: 2.5vw;
     grid-row-gap: 10px;
@@ -395,6 +380,8 @@ footer{
   
   .Facebook { 
       grid-area: 1 / 3 / 1 / 3; 
+      margin-top: 5%;
+      margin-left: 4%;
     }
   
   .Company { 
@@ -428,9 +415,12 @@ footer{
         content: '';
     }
 
-    .nav-name{
+    .nav-name {
+        color: #636363;
         font-weight: 700;
         text-align: right;
+        margin-bottom: 10px;
+        margin-right: 5%;
     }
 
     
@@ -443,4 +433,10 @@ footer{
         text-decoration: none;
         display: block;
         text-align: right;
+    }
+
+    .copyright {
+      margin-top: 1%;
+      margin-left: 4%;
+      margin-bottom: 3%;
     }

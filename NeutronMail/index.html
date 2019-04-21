@@ -30,7 +30,7 @@
 
             <img src="assets/images/sign-in-alt-solid.svg" height="22" class="login" alt="NeutronMail">
                 <button class="log-item"><a href="#">Log in</a></button>
-                <button class="log-item gradient white"><a href="#">Sign up</a></button>
+                <button class="log-item gradient log-item-white"><a href="#">Sign up</a></button>
         </nav>
         </div>  
 
@@ -50,26 +50,24 @@
             <a class="facebook" href="#">B</a>
             <a class="twitter" href="#">C</a>
         </div>
-
-                                 
         
-        <div class="main-block ">
+        <div class="main-block">
             <h2>Secure Email Communication</h2>
             <h3>Based in <span class="red">Somewhere</span></h3>                 
                     
             <div class="buttons-container">
                 <button class="button gradient">Create account</button>
-                <a class="button gradient google" href="https://play.google.com" ><img src="./assets/images/googleplay.png" width="32" height="22"></a>
-                <a class="button gradient apple" href="https://itunes.apple.com" ><img src="./assets/images/appstore.png" width="32" height="22"></a>
+                <button class="button gradient google">
+                    <a href="https://play.google.com" ></a><img src="assets/images/googleplay.png" alt=""></a> 
+                </button>
+                <button class="button gradient apple">
+                    <a href="https://itunes.apple.com"></a><img src="assets/images/appstore.png" alt=""></a> 
+                </button>
+
             </div>
         </div>
-        
     </div>
-    
     </header>
-
-
-
 <main>
 
     <div class="grid-container">
@@ -109,25 +107,26 @@
 
       <div><img src="./assets/images/Layer 16.png" alt="partners"></div>
     
-    
-        <div class="">A new email service being developed by a group from MIT and CERN promises to bring secure,
-            encrypted email to the masses and keep sensitive information away from prying eyes.
-            — Boston Herald
+        <div class="blockquote">
+            <blockquote>A new email service being developed by a group from MIT and CERN promises to bring secure, encrypted email to the masses and keep sensitive information away from prying eyes.</blockquote>
+            <cite>— Boston Herald</cite>
         </div>
-
-        <div class="device">
-            <h4>Any device, anywhere</h4>
-            <div>The NeutronMail inbox is optimized for productivity. Each detail within our secure email service is
-                    optimized to help you better read, organize, and send email.
-             </div>
-            <button class="button store"><img src="./assets/images/Layer 24.png" alt="app"></button>
-            <button class="button store"><img src="./assets/images/Layer 23.png" alt="play"></button>
+        
+        <div class="device-img">
+            <div class="device">
+                <h4>Any device, anywhere</h4>
+                <div>The NeutronMail inbox is optimized for productivity. Each detail within our secure email service is
+                        optimized to help you better read, organize, and send email.
+                </div>
+                <button class="button store"><img src="./assets/images/Layer 24.png" alt="app"></button>
+                <button class="button store"><img src="./assets/images/Layer 23.png" alt="play"></button>
+            </div>
         </div>
 
         <div class="upgrade-block">
             <h4>Privacy is a fundamental human right.</h4>
             <div>Your support helps us to protect privacy world-wide.</div>
-            <button class="button gradient"> Upgrade to Paid Plan</button>
+            <button class="button gradient">Upgrade to Paid Plan</button>
             <button class="button blue-gradient"><i class="fas fa-dollar-sign"></i> Donate</button>
         </div>
                
@@ -143,10 +142,11 @@
 <footer>
         <div class="footer-grid-container">
                 <div class="General">
-                    <a href="mailto: contact@neutronmail.ch">General: contact@neutronmail.ch</a>
-                    <a href="mailto: media@neutronmail.ch">Media: media@neutronmail.ch</a>
-                    <a href="mailto: security@neutronmail.ch">Security: security@neutronmail.ch</a>
-                    <p>For support inquiries, please visit neutronmail.com/support</p>
+                    <a href="mailto: contact@neutronmail.ch">General: <b>contact@neutronmail.ch</b></a></br>
+                    <a href="mailto: media@neutronmail.ch">Media: <b>media@neutronmail.ch</b></a></br>
+                    <a href="mailto: security@neutronmail.ch">Security: <b>security@neutronmail.ch</b></a></br>
+                    </br>
+                    <p>For support inquiries, please visit <b><a href="neutronmail.com/support">neutronmail.com/support</a></b></p>
                 </div>
                 
                 <div class="Company">
@@ -196,7 +196,8 @@
                         </ul>
                     </nav>
             </div>
-              <span>© 2017 Neutron Technologies AG. All Rights Reserved.</span>
+    
+        <p class="copyright">© 2017 Neutron Technologies AG. All Rights Reserved.</p>
    
 </footer>
 </div>
