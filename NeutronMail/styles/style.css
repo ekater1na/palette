@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'TitilliumWeb-Regular';
+    src: url('../assets/fonts/TitilliumWeb-Regular.ttf') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-Bold';
+    src: url('../assets/fonts/TitilliumWeb-Bold.ttf') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-SemiBold';
+    src: url('../assets/fonts/TitilliumWeb-SemiBold.ttf') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'MalagaOT-RegItalic';
+    src: url('../assets/fonts/MalagaOT-RegItalic.otf') format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+* {
+    margin: 0;
+    font-family: 'TitilliumWeb-Regular';
+    color: rgba(149, 147, 147, 255);
+    font-size: 16px;
+}
+
+.violet {
+    color: #5b4295;
+    font-size: inherit;
+}
+
+.red {
+    color: #fc444a;
+    font-size: inherit;
+}
+
+.white {
+    color: white;
+}
+
+/* .container-fixed {
+    max-width: 100%;
+    margin: 0 auto;
+} */
+
+.wrapper {
+    padding: 4.2vw 8vh 0vh 12vw; 
+}
+    
+body {
+    margin: 0;
+    color: #636363;
+    width: 100%;    
+}
+
+
+.right-wrap {
+    float: right; 
+    right: 0;
+    margin-top: -2%;
+}
+
+.next {
+    position: relative;
+}
+
+main p {
+    margin: 0;
+}
+
+.header, .footer, .main {
+    overflow: hidden;
+} 
+
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+.main-block {
+    margin: 0;
+} 
+
+  
+
+/*header*/
+header {
+    background-image: url('../assets/images/mainImage.png');
+    height: 90vh; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    opacity: 0.8;  
+    display: block;     
+}
+
+ nav {
+    display: inline;
+    position: relative;
+} 
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-family: TitilliumWeb-Regular, AdobeInvisFont, MyriadPro-Regular;
+    color: rgba(69, 69, 69, 255);
+    font-size: 16px;
+    display: inline;
+}
+
+
+.main-menu {
+    display: inline-block;
+    font-size: 16pt;
+    color: #636363;
+    text-align: justify;
+}
+
+.main-menu > li:after {
+    content: "";
+     padding: 0 7px; 
+}
+
+.main-menu > li:last-child:after {
+    content: '';
+    margin-right: 5vw;
+}
+
+.lang-menu {
+   float: left;
+   font: 10pt;
+   
+}
+
+.lang-menu > li:after {
+    content: ' / ';
+    padding: 0 5px;
+}
+
+.lang-menu > li:last-child:after {
+    content: '';
+}
+
+
+
+.menu-item {
+    text-decoration: none;
+}
+
+
+.log-menu {
+    position: relative;
+    float: right;
+}
+
+.log-item {
+   border: none;
+   background-color: white;
+}
+
+.login {
+    opacity: 0.5;
+    margin-top: -3px; 
+}
+
+h1 {
+    font-family: TitilliumWeb-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 30px;
+    color: #636363;
+    position: relative;    
+    line-height: 3.5rem;
+}
+
+h1::after {
+    margin-right: 5%;
+}
+
+h2 {
+    font-family: TitilliumWeb-Regular, TitilliumWeb-SemiBold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 60px;
+    color: rgba(69, 69, 69, 255);
+    padding: 13.4% 0 0 0;
+    text-align: center;
+    letter-spacing: 0.98;
+}
+
+h3 {
+    font-family: TitilliumWeb-Regular, TitilliumWeb-SemiBold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 26pt;
+    color: rgba(69, 69, 69, 255);
+    text-align: center;
+    line-height: 3.9rem;  
+    letter-spacing: 0.97;
+}
+
+h4 {
+    font-family: TitilliumWeb-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 24pt;
+    color: rgba(85, 85, 85, 255);
+}
+
+h5 {
+    font-family: TitilliumWeb-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 14pt;    
+}
+
+h6 {
+    font-family: TitilliumWeb-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 30pt;
+    color: rgba(83, 83, 83, 255);
+    text-align: center;
+}
+
+
+
+button {
+    font-family: TitilliumWeb-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12pt;
+    color: white;
+    text-align: center;
+}
+
+div {
+    font-family: TitilliumWeb-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 14pt;
+    color: rgba(149, 147, 147, 255);
+}
+
+.div-security {
+    text-align: center;
+    font: 24px;
+}
+
+
+.share-icons-container {
+    position: absolute;
+    right: 10px;
+    top: 45%;
+}
+
+.share-icons-container > a {
+    display: block;
+}
+
+
+.buttons-container{
+    background-image: url(../assets/images/shadow.png);
+    background-size: auto; 
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.google {
+    background-image: url(../assets/images/playstore.png);
+}
+
+.apple {
+    background-image: url(../assets/images/appstore.png);
+}
+
+.gradient {
+    background: linear-gradient(to bottom right, #582c7e, #5a3b8e, #616bc0, #6276cd);
+    border-radius: 20px;
+    border: none;
+}
+
+/*main*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  
+  .gr11  { 
+      grid-area: 2 / 2 / 2 / 2; }
+  
+  .gr12  { 
+      grid-area: 2 / 3 / 2 / 3 ; }
+  
+  .gr13  { 
+      grid-area: 2 / 4 / 2 / 4 }
+  
+  .gr21  { 
+      grid-area: 3 / 2 / 3 / 2; }
+  
+  .gr22  { 
+      grid-area: 3 / 3 / 3 / 3; }
+  
+  .gr23  { 
+      grid-area: 3 / 4 / 3 / 4; }
+  
+  .gr3  { 
+      grid-area: 4 / 2 / 4 / 4 }
+  
+  .gr4  { 
+      grid-area: 5 / 3 / 5 / 5; }
+  
+
+/*.advantages {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.advantages-content {
+    font-size: 14pt;
+}
+
+.advantages-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.advantages-row-1 {
+    height: 100px;
+}
+
+.advantages-row-1-1 {
+    flex: 1;
+    border-right: 1px solid #c0c0c0;
+}
+.advantages-row-1-2 {
+    flex: 2;
+}
+
+.advantages-row-2 {
+    height: 100px;
+    flex: 1;
+}
+.advantages-row-2-1 {
+    flex: 2;
+    border-right: 1px solid #c0c0c0;
+}
+
+.advantages-row-2-3 {
+    border-right: 1px solid #c0c0c0;
+}
+.advantages-row-2-4 {
+    border-top: 1px solid #c0c0c0;
+}
+
+.main-img-bg {
+     background-size: cover;
+     opacity: 0.75;
+}*/
+
+/*footer*/
+
+footer {
+    height: 300px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.footer-menu > li:after {
+    content: ' / ';
+    padding: 0 5px;
+}
+
+.footer-menu > li:last-child:after {
+    content: '';
+}
