@@ -4,13 +4,57 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Palette</title>    
+        <script> type="text/javascript" href="style.css"
+        </script>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        <header>
+            <h1>CodeJam - Pallete</h1>
+        </header>
         <div class="grid2x2">
-            <div class="box box1"><div>one</div></div>
-            <div class="box box2"><div>two</div></div>
-            <div class="box box3"><div>three</div></div>
+            <div class="box box1">
+                 <!-- (красит в ".... color" по клику) -->
+                <button>paint bucket tool</button>
+                <!-- (выбирает по клику цвет который должен стать текущим) -->
+                <button>choose color</button>
+                <!-- (свободно двигать квадраты) -->
+                <button>move tool</button>
+                <!-- (меняет на элемент на кружочек и обратно) -->
+                <button>transform tool</button>
+            </div>
+            <div class="box box2"><div>Canvas
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div></div>
+            <div class="box box3">
+                <ul>
+                    <li class="current-color">
+                        <input id="currentColor" type="radio"  />
+                        <label for="currentColor">Current color</label>
+                    </li>
+                    <li class="prev-color">
+                        <input id="prevColor" type="radio"  />
+                        <label for="prevColor">Prev color</label>
+                    </li>
+                    <li class="">
+                        <input id="redColor" type="radio"  />
+                        <label for="redColor">red</label>
+                     </li>
+                    <li class="">
+                        <input id="blueColor" type="radio"  />
+                        <label for="blueColor">blue</label>
+                    </li>
+                </ul>
+            </div>
+
             <div class="box box4"><div>four</div></div>
           </div>
     </body>
