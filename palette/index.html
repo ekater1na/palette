@@ -4,59 +4,96 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Palette</title>    
-        <script> type="text/javascript" href="style.css"
+        <!-- <script> type="text/javascript" href="style.css" -->
         </script>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
     </head>
+
     <body>
-        <header>
+
+        <header class="header">
             <h1>CodeJam - Pallete</h1>
         </header>
-        <div class="grid2x2">
-            <div class="box box1">
-                 <!-- (красит в ".... color" по клику) -->
-                <button>paint bucket tool</button>
-                <!-- (выбирает по клику цвет который должен стать текущим) -->
-                <button>choose color</button>
-                <!-- (свободно двигать квадраты) -->
-                <button>move tool</button>
-                <!-- (меняет на элемент на кружочек и обратно) -->
-                <button>transform tool</button>
-            </div>
-            <div class="box box2"><div>Canvas
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div></div>
-            <div class="box box3">
-                <ul>
-                    <li class="current-color">
-                        <input id="currentColor" type="radio"  />
-                        <label for="currentColor">Current color</label>
-                    </li>
-                    <li class="prev-color">
-                        <input id="prevColor" type="radio"  />
-                        <label for="prevColor">Prev color</label>
-                    </li>
-                    <li class="">
-                        <input id="redColor" type="radio"  />
-                        <label for="redColor">red</label>
-                     </li>
-                    <li class="">
-                        <input id="blueColor" type="radio"  />
-                        <label for="blueColor">blue</label>
-                    </li>
-                </ul>
-            </div>
 
-            <div class="box box4"><div>four</div></div>
-          </div>
+        <main class="main">
+            <article class="main-workspace">
+                <section class="main-workspace-tools">
+                    <div class="main-workspace-tools-wrapper">
+                        <ul class="tools-items">
+                            <li class="tools">
+                                <img src="assets/pictures/paint-bucket-icon.svg" alt="" class="tools-icon">
+                                <button class="tools-button">Paint bucket</button>
+                            </li>
+                            <li class="tools">
+                                <img src="assets/pictures/eye-dropper-icon.svg" alt="" class="tools-icon">
+                                <button class="tools-button">Choose color</button>
+                            </li>
+                            <li class="tools">
+                                <img src="assets/pictures/move-icon.svg" alt="" class="tools-icon">
+                                <button class="tools-button">Move</button>
+                            </li>
+                            <li class="tools">
+                                <img src="assets/pictures/transform-icon.svg" alt="" class="tools-icon">
+                                <button class="tools-button">Transform</button>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="color">
+                    <div class="color-wrapper">
+                        <ul class="colors">
+                            
+                            <li class="colors-item">
+                                <div class="colors-display-wrapper">
+                                    <div class="colors-display"></div>
+                                </div>
+                                <p class="current-color">Current color</p>
+                            </li>
+
+                            <li class="colors-item">
+                                <div class="colors-display-wrapper">
+                                    <div class="colors-display"></div>
+                                    </div>
+                                <p class="previous-color">Previous color</p>
+                            </li>
+
+                            <li class="colors-item">
+                                <div class="colors-display-wrapper">
+                                    <div class="colors-display"></div>
+                                </div>
+                                <p class="preset-color preset-color-1">Red</p>
+                                </li>
+
+                            <li class="colors-item">
+                                <div class="colors-display-wrapper">
+                                    <div class="colors-display"></div>
+                                </div>
+                                <p class="preset-color preset-color-2">Blue</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="canvas-wrapper">
+                    <div class="canvas">
+                        <div class="canvas-item"></div>
+                        <div class="canvas-item"></div>
+                        <div class="canvas-item"></div>
+                        <div class="canvas-item"></div>
+                        <div class="canvas-item"></div>
+                        <div class="canvas-item"></div>
+                        <div class="canvas-item"></div>
+                        <div class="canvas-item"></div>
+                        <div class="canvas-item"></div>
+                    </div>
+                </section>
+            </article>
+
+        </main>
+
     </body>
+
+    <footer></footer>
 
 </html>
