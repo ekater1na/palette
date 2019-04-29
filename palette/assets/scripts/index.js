@@ -1,5 +1,5 @@
 const colorPickerEl = document.getElementById('color_picker');
-console.log('colorPickerEl', colorPickerEl);
+//console.log('colorPickerEl', colorPickerEl);
 colorPickerEl.addEventListener("click", function(event){
   console.log('click', event);
 });
@@ -13,3 +13,4 @@ document.addEventListener('click', (event) => {
   console.log('click', event);
   console.log('color', event.target.style.backgroundColor);
 });
+
