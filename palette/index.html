@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Palette</title>    
-        <!-- <script> type="text/javascript" href="style.css" -->
-        </script>
         <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
     </head>
 
@@ -26,7 +25,7 @@
                             </li>
                             <li class="tools">
                                 <img src="assets/pictures/eye-dropper-icon.svg" alt="" class="tools-icon">
-                                <button class="tools-button">Choose color</button>
+                                <button class="tools-button" id="color_picker"><span>Choose color</span></button>
                             </li>
                             <li class="tools">
                                 <img src="assets/pictures/move-icon.svg" alt="" class="tools-icon">
@@ -53,23 +52,23 @@
 
                             <li class="colors-item">
                                 <div class="colors-display-wrapper">
-                                    <div class="colors-display"></div>
+                                    <div class="colors-display" id="chosen_color"></div>
                                     </div>
                                 <p class="previous-color">Previous color</p>
                             </li>
 
                             <li class="colors-item">
                                 <div class="colors-display-wrapper">
-                                    <div class="colors-display"></div>
+                                    <div class="colors-display preset-color-1"></div>
                                 </div>
-                                <p class="preset-color preset-color-1">Red</p>
+                                <p class="preset-color preset-color1">Red</p>
                                 </li>
 
                             <li class="colors-item">
                                 <div class="colors-display-wrapper">
-                                    <div class="colors-display"></div>
+                                    <div class="colors-display preset-color-2"></div>
                                 </div>
-                                <p class="preset-color preset-color-2">Blue</p>
+                                <p class="preset-color preset-color2">Blue</p>
                             </li>
                         </ul>
                     </div>
@@ -92,6 +91,7 @@
 
         </main>
 
+        <script  src="assets/scripts/index.js"></script>
     </body>
 
     <footer></footer>

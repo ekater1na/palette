@@ -105,9 +105,9 @@ h1 {
 }
 
 .color-wrapper:before{
-  content:"";
-  display:block;
-  padding-top:100%;
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
 
 .colors {
@@ -154,12 +154,12 @@ h1 {
   left: 0;
   bottom: 0;
   right: 0;
-  border: 1.5px solid#a9a9a9;
+  border: 1.5px solid #a9a9a9;
   border-radius: 50%;
 }
 
-.colors-item:hover .colors-display {
-  background-color: #a9a9a9;
+.colors-item:hover .colors-display{
+  /* background-color: #a9a9a9; */
   border-color: #a9a9a9;
 }
 
@@ -169,6 +169,14 @@ h1 {
   background-color: inherit;
   border: none;
   color: #a9a9a9;
+}
+
+.preset-color-1 {
+  background-color:#FF0000 ;
+}
+
+.preset-color-2 {
+  background-color: #2753e4 ;
 }
 
 /* Canvas */
@@ -201,5 +209,5 @@ h1 {
 .canvas-item {
   border: 1px solid #a9a9a9;
   border-radius: 0%;
-  box-shadow: 0 0 3px 2px #a9a9a9;
+  background-color: #a9a9a9;
 }
