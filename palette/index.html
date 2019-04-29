@@ -11,7 +11,7 @@
     <body>
 
         <header class="header">
-            <h1>CodeJam - Pallete</h1>
+            <h1 id="header">CodeJam - Pallete</h1>
         </header>
 
         <main class="main">
@@ -21,11 +21,11 @@
                         <ul class="tools-items">
                             <li class="tools">
                                 <img src="assets/pictures/paint-bucket-icon.svg" alt="" class="tools-icon">
-                                <button class="tools-button">Paint bucket</button>
+                                <button class="tools-button" id="bucket">Paint bucket</button>
                             </li>
                             <li class="tools">
                                 <img src="assets/pictures/eye-dropper-icon.svg" alt="" class="tools-icon">
-                                <button class="tools-button" id="color_picker"><span >Choose color</span></button>
+                                <button class="tools-button" id="color_picker">Choose color</button>
                             </li>
                             <li class="tools">
                                 <img src="assets/pictures/move-icon.svg" alt="" class="tools-icon">
@@ -33,7 +33,7 @@
                             </li>
                             <li class="tools">
                                 <img src="assets/pictures/transform-icon.svg" alt="" class="tools-icon">
-                                <button class="tools-button">Transform</button>
+                                <button class="tools-button" id="transform">Transform</button>
                             </li>
                         </ul>
                     </div>
@@ -76,7 +76,7 @@
 
                 <section class="canvas-wrapper">
                     <div class="canvas">
-                        <div class="canvas-item"></div>
+                        <div class="canvas-item" id="change_form bucket_form"></div>
                         <div class="canvas-item"></div>
                         <div class="canvas-item"></div>
                         <div class="canvas-item"></div>

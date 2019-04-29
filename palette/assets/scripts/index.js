@@ -1,6 +1,6 @@
+// ColorPicker
 
 const colorPickerEl = document.getElementById('color_picker');
-//console.log('colorPickerEl', colorPickerEl);
 
 colorPickerEl.addEventListener("click", function(event){
   console.log('click', event);
@@ -11,10 +11,16 @@ colorPickerEl.addEventListener("click", function(event){
 };
 
 colorPickerEl.addEventListener('click', (event) => {
-  // eslint-disable-next-line no-console
   console.log('click', event);
   window.state.currentTool = 'colorPicker';
   colorPickerEl.classList.add('highlight-color-picker');
+});
+
+const headerEl = document.getElementById('header');
+
+headerEl.addEventListener('click', () => {
+  window.state.currentTool = 'none';
+  colorPickerEl.classList.remove('highlight-color-picker');
 });
 
 document.addEventListener('click', (event) => {
@@ -25,7 +31,4 @@ document.addEventListener('click', (event) => {
     console.log('color', getComputedStyle(event.target).backgroundColor);
   }
 });
-
-
-
 
