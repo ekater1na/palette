@@ -64,10 +64,41 @@ document.addEventListener('click', (event) => {
     event.stopPropagation ? event.stopPropagation() : event.cancelBubble = !0;
     event = window.getComputedStyle ? getComputedStyle(b, "") : b.currentStyle;
     event = event.backgroundColor;
-    let c = b.getAttribute("color");
-    element=document.getElementById("chosen_color");
+    element = document.getElementById("chosen_color");
     currentColor = getComputedStyle(element).backgroundColor;
-    b.style.backgroundColor = (c = event, currentColor);
-    b.setAttribute("color", c)
+    b.style.backgroundColor = (c = currentColor);
   }
 });
+
+// Transform
+const transformEl = document.getElementById('transform');
+console.log('transformEl', transformEl);
+
+transformEl.addEventListener("click", function(event){
+  console.log('click', event);
+});
+
+ window.state = {
+  currentTool: '',
+};
+
+transformEl.addEventListener('click', (event) => {
+  console.log('click', event);
+  window.state.currentTool = 'transform';
+  transformEl.classList.add('highlight-color-picker');
+});
+
+const headerEl2 = document.getElementById('header');
+
+headerEl2.addEventListener('click', () => {
+  window.state.currentTool = 'none';
+  transformEl.classList.remove('highlight-color-picker');
+});
+
+document.addEventListener('click', (event) => {
+  if (window.state.currentTool === 'transform') {
+    var myElementStyle = document.getElementById('change_form').style;
+    myElementStyle.borderRadius = '50%';
+  }})
+  
+
