@@ -171,7 +171,11 @@ h1 {
   color: #a9a9a9;
 }
 
-/* .preset-color-0 {
+.preset-color {
+  background-color: #f3ef09;
+}
+
+ .preset-color-0 {
   background-color:#4ef385;
 }
 
@@ -181,7 +185,7 @@ h1 {
 
 .preset-color-2 {
   background-color: #2753e4;
-} */
+} 
 
 /* Canvas */
 
@@ -213,5 +217,5 @@ h1 {
 .canvas-item {
   border: 1px solid #a9a9a9;
   border-radius: 0%;
-  background-color: #c7c4c4;
+  background-color: #c7c4c4; 
 }
