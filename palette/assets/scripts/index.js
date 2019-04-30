@@ -60,7 +60,7 @@ headerEl1.addEventListener('click', () => {
 
 document.addEventListener('click', (event) => {
   const b = event && event.target || window.event.srcElement;
-  if (window.state.currentTool === 'bucket' && "canvas-item" == b.className) {
+  if (window.state.currentTool === 'bucket' &&  b.className == "canvas-item") {
     event.stopPropagation ? event.stopPropagation() : event.cancelBubble = !0;
     event = window.getComputedStyle ? getComputedStyle(b, "") : b.currentStyle;
     event = event.backgroundColor;
@@ -95,10 +95,16 @@ headerEl2.addEventListener('click', () => {
   transformEl.classList.remove('highlight-color-picker');
 });
 
-document.addEventListener('click', (event) => {
-  if (window.state.currentTool === 'transform') {
-    var myElementStyle = document.getElementById('change_form').style;
-    myElementStyle.borderRadius = '50%';
-  }})
-  
-
+document.addEventListener('click', (a) => {
+  const b = a && event.target || window.a.srcElement;
+  if (window.state.currentTool === 'transform' &&  b.className == "canvas-item") {
+    a.stopPropagation ? a.stopPropagation() : a.cancelBubble = !0;
+    a = window.getComputedStyle ? getComputedStyle(b, "") : b.currentStyle;
+    a = a.borderRadius ;
+    var d = b.getAttribute("border-radius", 50);
+    if (b.style.borderRadius == '50%') {
+      b.style.borderRadius = '0%';
+    }
+    else {
+      b.style.borderRadius = '50%';
+}}})

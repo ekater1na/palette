@@ -217,8 +217,9 @@ h1 {
 .canvas-item {
   border: 1px solid #a9a9a9;
   background-color: #c7c4c4; 
-}
+  }
 
 #chosen_color {
   border-radius: 50%;
 }
+
