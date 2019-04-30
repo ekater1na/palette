@@ -171,12 +171,12 @@ h1 {
   color: #a9a9a9;
 }
 
-.preset-color {
-  background-color: #f3ef09;
+ .preset-color {
+  background-color:#4ef385;
 }
 
- .preset-color-0 {
-  background-color:#4ef385;
+.preset-color-0 {
+  background-color:#ffe600;
 }
 
 .preset-color-1 {
@@ -184,7 +184,7 @@ h1 {
 }
 
 .preset-color-2 {
-  background-color: #2753e4;
+  background-color:#2753e4;
 } 
 
 /* Canvas */
@@ -223,3 +223,10 @@ h1 {
   border-radius: 50%;
 }
 
+.highlight-color-picker {
+  font-weight: 700;
+}
+
+.fill {
+  position: relative;
+}
